@@ -1,8 +1,8 @@
 # pforcs-problem-sheet G00305555
 
-## Week02
 
-### create bmi calculator
+
+## program to create a bmi calculator
 
 get user input for height(cms) and weight(kg), calculate bmi
 
@@ -12,3 +12,11 @@ get user input for height(cms) and weight(kg), calculate bmi
 userheightcms = float(input = print("Enter...")
 
 ```
+
+## program to get current bitcoin values
+use coindesk api, parse the returned json and unpack and print bitcoin values
+
+imported modules requests & pprint
+
+
+
