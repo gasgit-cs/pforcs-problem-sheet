@@ -29,10 +29,12 @@ print("Weight: " + str(user_weight))
 
 # calculate bmi as userweight divided by height in metres squared
 bmi = (user_weight / (user_height_metres ** 2))
+abs_bmi = abs((user_weight / (user_height_metres ** 2)))
 
 # print bnew lank line
 print("\n")
 
 # print bmi message, print with string function after round to 2 decimal places
 print("Your BMI is : " + str(round(bmi, 2)))
+print("Your BMI is : " + str(abs_bmi))
 
