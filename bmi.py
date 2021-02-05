@@ -35,6 +35,6 @@ abs_bmi = abs((user_weight / (user_height_metres ** 2)))
 print("\n")
 
 # print bmi message, print with string function after round to 2 decimal places
-print("Your BMI is : " + str(round(bmi, 2)))
+#print("Your BMI is : " + str(round(bmi, 2)))
 print("Your BMI is : " + str(abs_bmi))
 

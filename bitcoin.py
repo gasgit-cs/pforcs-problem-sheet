@@ -22,7 +22,7 @@ bc_dict = my_data.json() #test
 
 
 # print the object to readable format
-#pprint.pprint(bc_dict)
+pprint.pprint(bc_dict)
 print("Rates Now :) | :(")
 # unpack tuples by iterating over the dict items
 for bc_rate in bc_dict['bpi'].items():
@@ -31,10 +31,13 @@ for bc_rate in bc_dict['bpi'].items():
     # use a, b variables for unpacking
     a, b = bc_rate
     # unpack currency
-    #print(type(a)) #test
+    # print(type(a)) #test
     # print(a) #test
     # unpack rate
     # print(type(b)) #test
     # print(b['rate']) #test
 
-    print("{} current rate in bitcoin is {}".format(a, b['rate']))
+    print("{} current rate of bitcoin is {}".format(a, b['rate']))
+
+
+
