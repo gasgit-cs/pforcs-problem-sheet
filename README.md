@@ -16,13 +16,15 @@ BMI = kg/m2
 
 [HSE BMI Chart](https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf)
 
-```
+Program output
+
+```bash
 We need some details to calculate:)
 
 
-Emter your height in cms: 180
+Emter your height cms: 180
 Height: 1.8
-Enter your weight in kg: 60
+Enter your weight kg: 60
 Weight: 60.0
 
 
@@ -71,7 +73,7 @@ Pprint to format json output( easy read )
 
 Progarm output
 ```bash
-Rates Now :) | :(
+Rates Now :) || :(
 USD current rate of bitcoin is 37,849.0204
 GBP current rate of bitcoin is 27,563.6627
 EUR current rate of bitcoin is 31,417.7906

@@ -13,7 +13,7 @@ print("We need some details to calculate:)")
 print("\n")
 
 # get user height in cms
-user_height_cms = float(input("Emter your height in cms: "))
+user_height_cms = float(input("Emter your height cms: "))
 
 # convert cms to metres
 user_height_metres = user_height_cms / 100
@@ -22,7 +22,7 @@ user_height_metres = user_height_cms / 100
 print("Height: " + str(user_height_metres))
 
 # get user weight in kgs
-user_weight = float(input("Enter your weight in kg: "))
+user_weight = float(input("Enter your weight kg: "))
 
 # print user weight
 print("Weight: " + str(user_weight))
