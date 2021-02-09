@@ -9,7 +9,7 @@
 # v1
 
 # get inital input from user
-inital_value = int(input("Enter integer please: "))
+inital_value = int(input("Enter integer please V1: "))
 # test inital input
 
 # check number is even with modulo
@@ -45,10 +45,12 @@ def check_value(next_val):
         print("Value entered multiplied by 3 + 1 is : {} ".format(curr_val))
         return curr_val
      
-
-next_val = int(input("Enter next int: "))
+# get int from user
+next_val = int(input("Enter int please V2: "))
+# conditional while loop, ture until returned value from check_value is not == 1
 while next_val != 1:
     next_val = check_value(next_val)
 else:
+    # print exit message once 1 is returned
     print("Exited by 1 :()")
 

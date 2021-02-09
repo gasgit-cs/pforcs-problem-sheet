@@ -83,11 +83,13 @@ EUR current rate of bitcoin is 31,417.7906
 Take a int number from the users and calculate steps
 
 *Steps*
-        take an int number from the user
+        take an int from the user
         use if else condition to determine
-        if it is even divide it by 2
-        if it is odd, multiply it by 3 and add 1
-        print results
+        if it is even divide it by 2 and return as current value
+        if it is odd, multiply it by 3 and add 1 and return as current value
+        keep checking until curr_val is 1, exit
+
+        
 
 
 ### Requirements
