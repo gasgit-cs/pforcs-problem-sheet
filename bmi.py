@@ -45,6 +45,7 @@
 # v2 complete program with main and functions
 
 def get_height():
+    
     # print new blank line
     print("\n")
 
@@ -55,7 +56,7 @@ def get_height():
     print("\n")
 
     # get user height in cms
-    user_height_cms = float(input("Emter your height cms: "))
+    user_height_cms = float(input("Enter your height cms: "))
 
     # convert cms to metres
     user_height_metres = user_height_cms / 100
@@ -68,19 +69,24 @@ def get_height():
 
 def get_weight():
 
+    # get user weight in cms
     user_weight = float(input("Enter your weight kg: "))
+    # print user weight
     print("Weight: " + str(user_weight))
+    # return user weight
     return user_weight
 
 # function to calculate the bmi, take 2 args user weigh & user height in metres
 def calculate(user_weight, user_height_metres):
 
+    # calculate bmi user weight kg divided by height m2
     bmi = (user_weight / (user_height_metres ** 2))
     # return bm1
     return bmi
 
 # function to display bmi, accepts 1 args bmi
 def display(bmi):
+
     # print message and bmi
     print("Your BMI is : " + str(bmi))
 

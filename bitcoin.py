@@ -78,8 +78,11 @@ def convert_my_data(my_data):
 
 # main function as entry point to the program, calling other frinctions
 def main():
+    # assign full url to url_to_get var
     url_to_get = "https://api.coindesk.com/v1/bpi/currentprice.json"
+    # pass url_to_get to make request function, assign the returned value to data
     data = make_request(url_to_get)
+    # pass datto convert function
     convert_my_data(data)
 
 # conditional block to check if the script contains a main function, running while True

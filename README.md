@@ -78,6 +78,21 @@ USD current rate of bitcoin is 37,849.0204
 GBP current rate of bitcoin is 27,563.6627
 EUR current rate of bitcoin is 31,417.7906
 ```
+## W04
+### *** Program to demo Collatz conjecture ***
+Take a int number from the users and calculate steps
+
+*Steps*
+        take an int number from the user
+        use if else condition to determine
+        if it is even divide it by 2
+        if it is odd, multiply it by 3 and add 1
+        print results
+
+
+### Requirements
+None
+
 
 
 
