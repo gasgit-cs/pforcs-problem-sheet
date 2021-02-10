@@ -54,3 +54,44 @@ else:
     # print exit message once 1 is returned
     print("Exited by 1 :()")
 
+
+
+#v3 
+
+# recursive 
+
+# get value
+# check value
+# calculate value
+# return current value even or odd
+# if not 1 check again
+
+def check_recursive(val_1):
+    # check if value is even with modulo   
+    if( val_1 % 2 ) == 0:
+        # assign val divided by  2
+        curr_v = val_1 // 2
+        # check if current value is not == 1
+        if curr_v != 1:
+            
+            print(curr_v)
+            # if not pass to check function
+            check_recursive(curr_v)
+        else:
+            # current value is 1, exit
+            print("{} Exit ".format(curr_v))         
+    else:
+        # current value is odd, do calculation
+        curr_v = (val_1 * 3) + 1
+        # check if current value is == 1
+        if curr_v != 1:
+             print(curr_v)
+             # if not pass to check_function
+             check_recursive(curr_v)
+        else:
+            # current value is 1, exit
+            print("{} Exit ".format(curr_v))    
+ # get user input        
+val_1 = int(input("Enter int V3: "))
+# pass val_1 to check_recurrsive
+check_recursive(val_1)
