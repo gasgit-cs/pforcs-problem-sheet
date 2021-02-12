@@ -26,7 +26,7 @@
 # if not 1 check again
 
 
-def check_value(next_val):
+def check_par(next_val):
     if (next_val % 2) == 0:
         curr_val = next_val // 2
         print(curr_val,  end=" ")
@@ -41,17 +41,24 @@ def get_input():
     return val_1
 
 # check parity, if not negative and greater then 0 return, else return get input
-def check_par(val_1):
+def check_sign(val_1):
     if val_1 != type(int()) and val_1 > 0:
-        #print("Returned", str(val_1))
+        print("Returned", str(val_1))
         return val_1
     else:
         print("Not Positive Input, Try Again:)")
-        return get_input()
+        print("Rejected", str(val_1))
+        x = get_input()
+        return check_sign(x)
+        
 # while 
 def meet_condition(next_val):
     while next_val != 1:
-        next_val = check_value(next_val)
+        # if next_val < 0:
+        #     print(next_val)
+            # print("Unfortunatly 2 negitives do not make a positive in this instance :(")
+            # break
+        next_val = check_par(next_val)
     else:
         # print exit message once 1 is returned
         print("Exited by 1 :()")
@@ -59,7 +66,7 @@ def meet_condition(next_val):
 def main():
 
     input1 = get_input()
-    next_val = check_par(input1)
+    next_val = check_sign(input1)
     meet_condition(next_val)
 
 
@@ -116,7 +123,7 @@ if __name__ == "__main__":
 #             print("{} Exit ".format(curr_v))
 # # get input 
 # def get_pos_input():
-#     val_1 = " "
+#     
 #     val_1 = int(input("Enter int please V3: "))
 #     return val_1
 # # check parity, if not negative and greater then 0 return, else return get input
