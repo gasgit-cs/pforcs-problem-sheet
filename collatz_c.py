@@ -6,22 +6,6 @@
 
 # author glen gardiner
 
-# v1
-
-# check if else logic
-
-# get inital input from user
-inital_value = int(input("Enter integer please V1: "))
-# check number is even with modulo
-if (inital_value % 2) == 0:
-    print("Value entered {} is even ".format(inital_value))
-    even_val = inital_value // 2
-    print("Value divided by 2 is: {}  ".format(even_val))
-else:
-    print("Value entered {} is odd ".format(inital_value))
-    odd_val = (inital_value * 3) + 1
-    print("Value entered multiplied by 3 + 1 is : {} ".format(odd_val))
-
 
 #################################################################################
 
@@ -34,69 +18,125 @@ else:
 # using a while loop to keep checking as long as the current value is not 1
 
 
+# get value
+# check sign
+# check parity
+# calculate value
+# return current value even or odd
+# if not 1 check again
+
+
 def check_value(next_val):
     if (next_val % 2) == 0:
-        print("Value entered {} is even ".format(next_val))
         curr_val = next_val // 2
-        print("Value divided by 2 is: {}  ".format(curr_val))
+        print(curr_val,  end=" ")
         return curr_val
-
     else:
-        print("Value entered {} is odd ".format(next_val))
         curr_val = (next_val * 3) + 1
-        print("Value entered multiplied by 3 + 1 is : {} ".format(curr_val))
+        print(curr_val, end=" ")
         return curr_val
 
+def get_input():
+    val_1 = int(input("Enter int: "))
+    return val_1
 
-# get int from user
-next_val = int(input("Enter int please V2: "))
+# check parity, if not negative and greater then 0 return, else return get input
+def check_par(val_1):
+    if val_1 != type(int()) and val_1 > 0:
+        #print("Returned", str(val_1))
+        return val_1
+    else:
+        print("Not Positive Input, Try Again:)")
+        return get_input()
+# while 
+def meet_condition(next_val):
+    while next_val != 1:
+        next_val = check_value(next_val)
+    else:
+        # print exit message once 1 is returned
+        print("Exited by 1 :()")
+
+def main():
+
+    input1 = get_input()
+    next_val = check_par(input1)
+    meet_condition(next_val)
+
+
+if __name__ == "__main__":
+    main()
+
+# while next_val != 1:
+#     next_val = check_value(next_val)
+# else:
+#     # print exit message once 1 is returned
+#     print("Exited by 1 :()")
+
+
 # conditional while loop, ture until returned value from check_value is not == 1
-while next_val != 1:
-    next_val = check_value(next_val)
-else:
-    # print exit message once 1 is returned
-    print("Exited by 1 :()")
+
+
 
 #################################################################################
 
 # v3
 
 # recursive
-
+# 
 # get value
-# check value
+# check sign
+# check parity
 # calculate value
 # return current value even or odd
 # if not 1 check again
 
+# def check_recursive(val_1):
+#     # check if value is even with modulo
+#     if(val_1 % 2) == 0:
+#         # assign val divided by  2
+#         curr_v = val_1 // 2
+#         # check if current value is not == 1
+#         if curr_v != 1:
+#             print(curr_v)
+#             # if not pass to check function
+#             check_recursive(curr_v)
+#         else:
+#             # current value is 1, exit
+#             print("{} Exit ".format(curr_v))
+#     else:
+#         # current value is odd, do calculation
+#         curr_v = (val_1 * 3) + 1
+#         # check if current value is == 1
+#         if curr_v != 1:
+#             print(curr_v)
+#             # if not pass to check_function
+#             check_recursive(curr_v)
+#         else:
+#             # current value is 1, exit
+#             print("{} Exit ".format(curr_v))
+# # get input 
+# def get_pos_input():
+#     val_1 = " "
+#     val_1 = int(input("Enter int please V3: "))
+#     return val_1
+# # check parity, if not negative and greater then 0 return, else return get input
+# def check_par(val_1):
+#     if val_1 != type(int()) and val_1 > 0:
+#         #print("Returned", str(val_1))
+#         return val_1
+#     else:
+#         print("Not Positive Input, Try Again:)")
+#         return get_pos_input()
+   
+# def main():
+#     x = get_pos_input()
+#     y = check_par(x)
+#     # pass y as val_1 to check_recurrsive
+#     check_recursive(y)
 
-def check_recursive(val_1):
-    # check if value is even with modulo
-    if(val_1 % 2) == 0:
-        # assign val divided by  2
-        curr_v = val_1 // 2
-        # check if current value is not == 1
-        if curr_v != 1:
-            print(curr_v)
-            # if not pass to check function
-            check_recursive(curr_v)
-        else:
-            # current value is 1, exit
-            print("{} Exit ".format(curr_v))
-    else:
-        # current value is odd, do calculation
-        curr_v = (val_1 * 3) + 1
-        # check if current value is == 1
-        if curr_v != 1:
-            print(curr_v)
-            # if not pass to check_function
-            check_recursive(curr_v)
-        else:
-            # current value is 1, exit
-            print("{} Exit ".format(curr_v))
+# if __name__ == "__main__":
+#     main()
 
 
-# get user input
-val_1 = int(input("Enter int V3: "))
-# pass val_1 to check_recurrsive
-check_recursive(val_1)
+
+
