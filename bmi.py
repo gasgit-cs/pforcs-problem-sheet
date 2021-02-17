@@ -56,6 +56,8 @@ def get_height():
     print("\n")
 
     # get user height in cms
+    # uhcms -
+    # uhm
     user_height_cms = float(input("Enter your height cms: "))
 
     # convert cms to metres
@@ -67,6 +69,7 @@ def get_height():
     # return height in metres
     return user_height_metres
 
+    # uw - user weight
 def get_weight():
 
     # get user weight in cms
