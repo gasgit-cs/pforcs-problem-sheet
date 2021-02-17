@@ -9,7 +9,7 @@
 
 
 def num():
-    n= float(input("Enter float: "))
+    n= float(input("Enter positive float: "))
     return n
 
 def guess():
@@ -19,27 +19,39 @@ def guess():
 # function takes 2 args
 # n - number to get square root of
 # g - educated guess
-# x - inital estimate and estimate until condition is satisfied 
-
+# e - inital estimate 
+# ev - susbequent estimated value
 def my_square_root(n, g):
-        # x is the inital estimate 
-        x = (( n / g ) + g) * 0.5
-        # loop until estimate squared is less than or equal to N
-        while x * x > n:
-            # calculate using current estimate
-            x = (( n / g ) + g) * 0.5
-            
-            return x
-# test function
-def actual_sqrt(x):
-    print("Actual SQRT: ", round(x ** .5, 1))
+        # e is the inital estimate 
+        e = (( n / g ) + g) * 0.5
 
+        print("Inital Estimate: ", e)
+        # whie the square of e is greater than n
+
+        while e * e > n:
+            # substitute g with inital value for subsequent iterations
+            ev = (( n / e ) + e) * 0.5
+            print("Subsequent Estimate:",ev)
+
+            e = round(ev, 1)
+        else:
+            #  return 
+            return e
+     
+
+
+# test function, N raised to the power of 0.5
+def actual_sqrt(s):
+    y = s ** 0.5
+    print("Actual Sqrt: ", round(y, 1))
+    
 
 def main():
     # get number n 
     x = num()
+    s = x
     # print actual sqrt to test
-    actual_sqrt(x)
+    actual_sqrt(s)
     # get educated guess
     y = guess()
     
