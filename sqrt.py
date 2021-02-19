@@ -1,4 +1,4 @@
-# program to estimate the square root of an positive float using newtons equation N = 1/2(N / G + G)
+# program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
 # N - positive number to find square root of
 # G - educated guess
 # pass number and inital guess to the equation and check inital estimate, 
