@@ -96,6 +96,12 @@ Take a int number from the users and calculate steps
 None
 
 
+##W05
+### *** Program to apply Newtons Equation for square root ***
 
-
+# program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
+# N - positive number to find square root of
+# G - educated guess
+# pass number and inital guess to the equation and check inital estimate, 
+# loop using last estimate n times to euqation until estimate is < or equal to N
 
