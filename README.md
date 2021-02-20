@@ -1,11 +1,12 @@
-# pforcs-problem-sheet G00305555
 
+# pforcs-problem-sheet G00305555 
 
 ## W01
 ### ***Setup***
 
 Install all enviroments and tools required for this module/course
 
+#
 
 ## W02
 ### ***Program to create a bmi calculator***
@@ -30,13 +31,13 @@ Weight: 60.0
 
 Your BMI is : 18.51851851851852
 ```
-
+#
 
 ## W03
 ### ***Program to get current bitcoin values***
 Utilse the coindesk api, parse the response,  unpack and print bitcoin values
 
-
+#
 
 #### ***Requirements***
 
@@ -78,6 +79,9 @@ USD current rate of bitcoin is 37,849.0204
 GBP current rate of bitcoin is 27,563.6627
 EUR current rate of bitcoin is 31,417.7906
 ```
+
+#
+
 ## W04
 ### *** Program to demo Collatz conjecture ***
 Take a int number from the users and calculate steps
@@ -95,13 +99,21 @@ Take a int number from the users and calculate steps
 ### Requirements
 None
 
+#
 
-##W05
+## W05
 ### *** Program to apply Newtons Equation for square root ***
+Program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
+N - positive number to find square root of
+G - educated guess
+*Staps*
+        pass number and inital guess to the equation
+        check inital estimate return if close 
+        otherwise loop using the estimate as G
+        n times until estimate is < or equal to N
 
-# program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
-# N - positive number to find square root of
-# G - educated guess
-# pass number and inital guess to the equation and check inital estimate, 
-# loop using last estimate n times to euqation until estimate is < or equal to N
+### Requirements
+Import module menrq ( simple modke to display a menu ) 
+
+#
 
