@@ -43,14 +43,14 @@ def check_par(p):
         return cv
 
 # while loop to check condition( c is not equal to 1 ) is true proceed
-#  until false break
+# until false break
 # c -  passed value to check condition
 def meet_condition(c):
     while True:
         if c != 1:
             c = check_par(c)
         else:
-            print("{} exit!".format(c))
+            print("{} Exit!".format(c))
             break
  # iiterate list and display in sequence   
 def display_col_list():

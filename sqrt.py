@@ -11,7 +11,7 @@ from menurq import menu_options as mo
 
 # 
 def num():
-    n = float(input("Enter positive float: ")) 
+    n = float(input("Enter positive num(float): ")) 
     return n
 
 def guess():

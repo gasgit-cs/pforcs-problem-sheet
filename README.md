@@ -72,7 +72,7 @@ Pprint to format json output( easy read )
           'updateduk': 'Feb 5, 2021 at 22:27 GMT'}}
 ```
 
-Progarm output
+Program output
 ```bash
 Rates Now :) || :(
 USD current rate of bitcoin is 37,849.0204
@@ -91,13 +91,23 @@ Take a int number from the users and calculate steps
         determine parity
         if it is even divide it by 2 and return as current value, add to list 
         if it is odd, multiply it by 3 and add 1 and return as current value add to list
-        conditional checking until curr_val is 1, exit
+        conditional checking until current value is 1, exit
 
         
 
-
 ### Requirements
 None
+
+Program output
+```bash
+Enter int: 10
+1 Exit!
+Collatz Result
+5 16 8 4 2 1
+```
+
+
+
 
 #
 
@@ -114,6 +124,28 @@ G - educated guess
 
 ### Requirements
 Import module menurq ( simple module to display a menu ) 
+
+Program output
+```bash
+Choose option from list
+1 : Run
+2 : Quit
+Enter choice: 1
+
+Running Program...
+
+Enter Positive Float: 121
+Actual Sqrt:  11.0
+Enter educated guess: 5
+Inital Estimate:  14.6
+Subsequent Estimate: 11.443835616438356
+Subsequent Estimate: 11.008606819471272
+Subsequent Estimate: 11.000003364519355
+Subsequent Estimate: 11.000000000000515
+Subsequent Estimate: 11.0
+SQRT is 11.0
+````
+
 
 #
 
