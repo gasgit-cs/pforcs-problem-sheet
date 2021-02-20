@@ -113,7 +113,7 @@ G - educated guess
         n times until estimate is < or equal to N
 
 ### Requirements
-Import module menrq ( simple module to display a menu ) 
+Import module menurq ( simple module to display a menu ) 
 
 #
 

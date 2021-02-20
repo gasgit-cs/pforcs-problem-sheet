@@ -34,13 +34,13 @@ def my_square_root(n, g):
             # substitute g with inital value for subsequent iterations
             s = (( n / i ) + i) * 0.5
             print("Subsequent Estimate:", s)
-            # 
+            # if estimate and sub estimate are equal, round required
             if s == i:
                 return round(i,1)
             else:
                 i = s
         else:
-            #  return inital estimate if correct
+            # return 
             return i
      
 # function, N raised to the power of 0.5
@@ -50,7 +50,7 @@ def actual_sqrt(s):
 
 
 def main():
-    # get number n
+    
     while True:
         # using menu_option from my menrq module
         mo()
@@ -64,8 +64,10 @@ def main():
         y = guess()
         # pass x & y to my_square_root function
         z = my_square_root(x, y)
+        # f-string format, value unchanged 
+        z1 = f'{z:.1f}'
         # print final estimate
-        print("SQRT is {}".format(z))
+        print("SQRT is {}".format(z1))
         
 # conditional function check for main 
 if __name__ == "__main__":
