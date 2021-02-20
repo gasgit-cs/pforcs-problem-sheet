@@ -59,7 +59,7 @@ def main():
         # assign x to s for test function
         s = x
         # print actual sqrt to test
-        actual_sqrt(s)
+        #actual_sqrt(s)
         # call guess function and assige return to y
         y = guess()
         # pass x & y to my_square_root function

@@ -135,7 +135,6 @@ Enter choice: 1
 Running Program...
 
 Enter Positive Float: 121
-Actual Sqrt:  11.0
 Enter educated guess: 5
 Inital Estimate:  14.6
 Subsequent Estimate: 11.443835616438356
