@@ -83,7 +83,7 @@ EUR current rate of bitcoin is 31,417.7906
 #
 
 ## W04
-### *** Program to demo Collatz conjecture ***
+### ***Program to demo Collatz conjecture***
 Take a int number from the users and calculate steps
 
 *Steps*
@@ -102,7 +102,7 @@ None
 #
 
 ## W05
-### *** Program to apply Newtons Equation for square root ***
+### ***Program to apply Newtons Equation for square root***
 Program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
 N - positive number to find square root of
 G - educated guess
