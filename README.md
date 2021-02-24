@@ -106,9 +106,6 @@ Collatz Result
 5 16 8 4 2 1
 ```
 
-
-
-
 #
 
 ## W05
@@ -144,8 +141,36 @@ Subsequent Estimate: 11.000003364519355
 Subsequent Estimate: 11.000000000000515
 Subsequent Estimate: 11.0
 SQRT is 11.0
-````
+```
 
 
-#
 
+## W06
+
+### ***Program read in a file, count occurence of a letter ***
+
+Program to take a file name as an argument from console, ask user to enter a letter as input, open and count occurences of the letter \
+
+
+*Steps*\
+        pass file to program through console\
+        ask user which letter to count
+        convert to upper and lower and store in vars lc uc
+        open the file with file reader\
+        readlines to t variable\
+        initalise count variables lower, upper\
+        iterate over t to extract each line\
+        iterate over each line to extarch each charachter\
+        check the charachter is lowercase  or uppercase of user input\
+        increment counts, add total and print results\
+
+
+
+### Requirements
+
+
+Program output
+```bash
+Enter the letter you require counted:a
+Total Chars count: 798668        Total Lower input: 60785        Total Upper input: 1536         Total input: 62321
+```
