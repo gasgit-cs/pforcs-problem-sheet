@@ -157,9 +157,8 @@ Program to take a file name as an argument from console, ask user to enter a let
         ask user which letter to count
         convert to upper and lower and store in vars lc uc
         open the file with file reader\
-        readlines to t variable\
         initalise count variables lower, upper\
-        iterate over t to extract each line\
+        iterate over f to extract each line\
         iterate over each line to extract each char\
         check the char is lowercase  or uppercase of user input\
         increment counts, add total and print results\
