@@ -25,7 +25,7 @@ lc =  i.lower()
 # c - charachter
 
 def read_file(fn, lc, uc):
-    # count all non space charachter
+    # count all non space char
     count_all = 0
     # count lower
     count_lower = 0

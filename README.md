@@ -160,8 +160,8 @@ Program to take a file name as an argument from console, ask user to enter a let
         readlines to t variable\
         initalise count variables lower, upper\
         iterate over t to extract each line\
-        iterate over each line to extarch each charachter\
-        check the charachter is lowercase  or uppercase of user input\
+        iterate over each line to extract each char\
+        check the char is lowercase  or uppercase of user input\
         increment counts, add total and print results\
 
 
