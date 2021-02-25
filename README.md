@@ -149,7 +149,7 @@ SQRT is 11.0
 
 ### ***Program read in a file, count occurence of a letter ***
 
-Program to take a file name as an argument from console, ask user to enter a letter as input, open and count occurences of the letter \
+Program to take a file name as an argument from console, ask user to enter a letter as input, open and count occurences of the letter
 
 
 *Steps*\
@@ -161,7 +161,7 @@ Program to take a file name as an argument from console, ask user to enter a let
         iterate over f to extract each line\
         iterate over each line to extract each char\
         check the char is lowercase  or uppercase of user input\
-        increment counts, add total and print results\
+        increment counts, add total and print results
 
 
 
