@@ -166,13 +166,13 @@ Program to take a file name as an argument from console, ask user to enter a let
 
 
 ### Requirements
-I extracted the text from https://www.gutenberg.org/files/2701/old/moby10b.txt
+I extracted the text from https://www.gutenberg.org/files/2701/old/moby10b.txt\
 Created a file called md.txt
 
 
 
 Program output
 ```bash
-Enter the letter you require counted:a
-Total Chars count: 798668        Total Lower input: 60785        Total Upper input: 1536         Total input: 62321
+Enter the letter you require counted: e
+Total Chars count: 1009467       Total Lower input: 116960       Total Upper input: 1363         Total input: 118323
 ```
