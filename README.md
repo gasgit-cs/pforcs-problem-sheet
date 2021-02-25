@@ -166,6 +166,9 @@ Program to take a file name as an argument from console, ask user to enter a let
 
 
 ### Requirements
+I extracted the text from https://www.gutenberg.org/files/2701/old/moby10b.txt
+Created a file called md.txt
+
 
 
 Program output
