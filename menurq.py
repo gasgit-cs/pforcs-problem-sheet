@@ -3,7 +3,7 @@
 
 # required 
 import sys
-#  
+#  function to display menu options and get user input
 def menu_options():
     running = True
     while running:

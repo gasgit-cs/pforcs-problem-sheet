@@ -1,49 +1,9 @@
 # terminal program to take user input, calculate and display BMI
 # inputs user height in cms, user weight in kg
-# outputs height, metres, weight in kgs, bmi 
+# outputs height in metres, weight in kgs, bmi 
 # author glen gardiner
 
-###################################################################################
-# v1
-# print new blank line
-# print("\n")
-
-# # display message to user
-# print("We need some details to calculate:)")
-
-# # print new blank line
-# print("\n")
-
-# # get user height in cms
-# user_height_cms = float(input("Emter your height cms: "))
-
-# # convert cms to metres
-# user_height_metres = user_height_cms / 100
-
-# # print height in metres
-# print("Height: " + str(user_height_metres))
-
-# # get user weight in kgs
-# user_weight = float(input("Enter your weight kg: "))
-
-# # print user weight
-# print("Weight: " + str(user_weight))
-
-# # calculate bmi as userweight divided by height in metres squared
-# bmi = (user_weight / (user_height_metres ** 2))
-# abs_bmi = abs((user_weight / (user_height_metres ** 2)))
-
-# # print bnew lank line
-# print("\n")
-
-# # print bmi message, print with string function after round to 2 decimal places
-# #print("Your BMI is : " + str(round(bmi, 2)))
-# print("Your BMI is : " + str(abs_bmi))
-
-##################################################################################
-
-# v2 complete program with main and functions
-
+# function to 
 def get_height():
     
     # print new blank line
@@ -56,8 +16,6 @@ def get_height():
     print("\n")
 
     # get user height in cms
-    # uhcms -
-    # uhm
     user_height_cms = float(input("Enter your height cms: "))
 
     # convert cms to metres
@@ -69,20 +27,20 @@ def get_height():
     # return height in metres
     return user_height_metres
 
-    # uw - user weight
+
 def get_weight():
 
-    # get user weight in cms
+    # get user weight in kg
     user_weight = float(input("Enter your weight kg: "))
     # print user weight
     print("Weight: " + str(user_weight))
     # return user weight
     return user_weight
 
-# function to calculate the bmi, take 2 args user weigh & user height in metres
+# function to calculate the bmi, take 2 args user weight & user height in metres
 def calculate(user_weight, user_height_metres):
 
-    # calculate bmi user weight kg divided by height m2
+    # calculate bmi - user weight kg divided by height m2
     bmi = (user_weight / (user_height_metres ** 2))
     # return bm1
     return bmi
