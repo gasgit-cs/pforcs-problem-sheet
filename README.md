@@ -2,6 +2,7 @@
 # pforcs-problem-sheet G00305555 
 
 ## W01
+
 ### ***Setup***
 
 Install all enviroments and tools required for this module/course
@@ -9,6 +10,7 @@ Install all enviroments and tools required for this module/course
 #
 
 ## W02
+
 ### ***Program to create a bmi calculator***
 
 Get user input for height(cms) and weight(kg), calculate bmi.
@@ -31,15 +33,18 @@ Weight: 60.0
 
 Your BMI is : 18.51851851851852
 ```
+
 #
 
 ## W03
+
 ### ***Program to get current bitcoin values***
+
 Utilse the coindesk api, parse the response,  unpack and print bitcoin values
 
-#
 
-#### ***Requirements***
+
+### Requirements
 
 Imported modules requests & pprint.
 
@@ -73,6 +78,7 @@ Pprint to format json output( easy read )
 ```
 
 Program output
+
 ```bash
 Rates Now :) || :(
 USD current rate of bitcoin is 37,849.0204
@@ -83,8 +89,10 @@ EUR current rate of bitcoin is 31,417.7906
 #
 
 ## W04
+
 ### ***Program to demo Collatz conjecture***
-Take a int number from the users and calculate steps\
+
+Take an int from the user and calculate steps
 
 *Steps*\
         take an integer from user\
@@ -96,9 +104,11 @@ Take a int number from the users and calculate steps\
         
 
 ### Requirements
+
 None
 
 Program output
+
 ```bash
 Enter int: 10
 1 Exit!
@@ -109,7 +119,9 @@ Collatz Result
 #
 
 ## W05
+
 ### ***Program to apply Newtons Equation for square root***
+
 Program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
 N - positive number to find square root of
 G - educated guess\
@@ -124,6 +136,7 @@ G - educated guess\
 Import module menurq ( simple module to display a menu ) 
 
 Program output
+
 ```bash
 Choose option from list
 1 : Run
@@ -147,7 +160,7 @@ SQRT is 11.0
 
 ## W06
 
-### ***Program read in a file, count occurence of a letter ***
+### ***Program to read in a file, count occurence of a letter***
 
 Program to take a file name as an argument from console, ask user to enter a letter as input, open and count occurences of the letter
 
