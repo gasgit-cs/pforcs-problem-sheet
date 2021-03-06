@@ -61,12 +61,11 @@ with open(my_file, encoding="utf-8") as f:
        
         # extarct urls
         my_url = extract_url(log)
-        # print(log)
         # append to url list
         url_list.append(my_url)
+
         # extarct paramaters
         pars = extract_parameters(my_url)
-        # print(pars)
         # iterate over parameter list excluding the first
         # example [' /cart.do', 'action=changequantity', 'itemId=EST-15', 'productId=SC-MG-G10', 'JSESSIONID=SD0SL9FF8ADFF6607 HTTP']
         for parameter in pars[1:]:
@@ -76,11 +75,12 @@ with open(my_file, encoding="utf-8") as f:
             par_dict = dict({k: v})
             # update paramaters dict
             parameters.update(par_dict)
-            
+
         # extarct resource from log
         res = extract_resource(log)
         # create new dict using resource and paramaters dicts
         res_and_pars = dict({'resource': res, 'paramaters': parameters})
+        
         # append to json list
         json_list.append(res_and_pars)
 
