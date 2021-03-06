@@ -21,13 +21,13 @@ def guess():
 # function takes 2 args
 # n - number to get square root of
 # g - educated guess
-# i - inital estimate 
+# i - initial  estimate 
 # s - susbequent estimated value
 def my_square_root(n, g):
   
         # i is the inital estimate 
         i = (( n / g ) + g) * 0.5
-        print("Inital Estimate: ", i) 
+        print("initial Estimate: ", i) 
       
         # whie the square of i is greater than n
         while  i * i > n:

@@ -5,7 +5,7 @@
 
 ### ***Setup***
 
-Install all enviroments and tools required for this module/course
+Install all enviroments and tools required for this module/course.
 
 #
 
@@ -17,7 +17,7 @@ Get user input for height(cms) and weight(kg), calculate bmi.
 
 BMI = kg/m2
 
-[HSE BMI Chart](https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf)
+[HSE BMI Chart] (https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf)
 
 Program output
 
@@ -25,7 +25,7 @@ Program output
 We need some details to calculate:)
 
 
-Emter your height cms: 180
+Enter your height cms: 180
 Height: 1.8
 Enter your weight kg: 60
 Weight: 60.0
@@ -40,8 +40,7 @@ Your BMI is : 18.51851851851852
 
 ### ***Program to get current bitcoin values***
 
-Utilse the coindesk api, parse the response,  unpack and print bitcoin values
-
+Utilse the coindesk api, parse the response, unpack and print bitcoin values
 
 
 ### Requirements
@@ -122,18 +121,18 @@ Collatz Result
 
 ### ***Program to apply Newtons Equation for square root***
 
-Program to estimate the square root of an positive float using newtons equation N = .5(N / G + G)
+Program to estimate the square root of a positive float using newtons equation N = .5(N / G + G)
 N - positive number to find square root of
 G - educated guess\
 
 *Steps*\
-        pass number and inital guess to the equation\
-        check inital estimate return if close\
-        otherwise loop using the estimate as G\
+        pass number and initial  guess to the equation\
+        check initial estimate return if close\
+        otherwise, loop using the estimate as G\
         n times until estimate is < or equal to N
 
 ### Requirements
-Import module menurq ( simple module to display a menu ) 
+Import module menurq (simple module to display a menu) 
 
 Program output
 
@@ -147,7 +146,7 @@ Running Program...
 
 Enter Positive Float: 121
 Enter educated guess: 5
-Inital Estimate:  14.6
+initial Estimate:  14.6
 Subsequent Estimate: 11.443835616438356
 Subsequent Estimate: 11.008606819471272
 Subsequent Estimate: 11.000003364519355
@@ -156,7 +155,7 @@ Subsequent Estimate: 11.0
 SQRT is 11.0
 ```
 
-
+#
 
 ## W06
 
@@ -170,10 +169,10 @@ Program to take a file name as an argument from console, ask user to enter a let
         ask user which letter to count
         convert to upper and lower and store in vars lc uc
         open the file with file reader\
-        initalise count variables lower, upper\
+        initialise count variables lower, upper\
         iterate over f to extract each line\
         iterate over each line to extract each char\
-        check the char is lowercase  or uppercase of user input\
+        check the char is lowercase or uppercase of user input\
         increment counts, add total and print results
 
 
@@ -189,3 +188,85 @@ Program output
 Enter the letter you require counted: e
 Total Chars count: 1009467       Total Lower input: 116960       Total Upper input: 1363         Total input: 118323
 ```
+
+#
+
+## W07
+
+### ***Program to extract logs from a file using regex***
+
+Program will parse the log file, store urls and paramater dictobjects in lists
+Extract paramaters from urls and create a list of json objects
+
+*Steps*\
+read in file,
+extract url, append to list
+extract paramaters from url
+split out, convert to json objects and store in a dict 
+extract resource
+build a new nested dict object and append to my list of dict objects
+write results out to files
+
+
+### Requirements
+
+import re, io, json, pprint
+
+Program output
+```
+
+Sample from urllist.txt
+
+[' /product.screen?productId=WC-SH-A02&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /oldlink?itemId=EST-6&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /product.screen?productId=BS-AG-G09&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /category.screen?categoryId=STRATEGY&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /product.screen?productId=FS-SG-G03&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /cart.do?action=addtocart&itemId=EST-21&productId=FS-SG-G03&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /cart.do?action=purchase&itemId=EST-21&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /cart/success.do?JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /cart.do?action=remove&itemId=EST-11&productId=WC-SH-A01&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /oldlink?itemId=EST-14&JSESSIONID=SD0SL6FF7ADFF4953 HTTP ', ' /product.screen?productId=WC-SH-G04&JSESSIONID=SD7SL8FF5ADFF4964 HTTP ', ' /cart.do?action=addtocart&itemId=EST-18&productId=WC-SH-G04&JSESSIONID=SD7SL8FF5ADFF4964 HTTP ', ' /cart.do?action=purchase&itemId=EST-18&JSESSIONID=SD7SL8FF5ADFF4964 HTTP ', ' /cart/error.do?msg=CreditDoesNotMatch&JSESSIONID=SD7SL8FF5ADFF4964 HTTP ', ' /category.screen?categoryId=NULL&JSESSIONID=SD7SL8FF5ADFF4964 HTTP ', '
+
+
+Sample from jsonlist.json
+
+[{'resource': 'product.screen', 'paramaters': {'productId': 'WC-SH-A02', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'oldlink', 'paramaters': {'itemId': 'EST-6', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.screen', 'paramaters': {'productId': 'BS-AG-G09', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'category.screen', 'paramaters': {'categoryId': 'STRATEGY', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.screen', 'paramaters': {'productId': 'FS-SG-G03', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'addtocart', 'itemId': 'EST-21', 'productId': 'FS-SG-G03', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'purchase', 'itemId': 'EST-21', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart/success.do', 'paramaters': {'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'remove', 'itemId': 'EST-11', 'productId': 'WC-SH-A01', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'oldlink', 'paramaters': {'itemId': 'EST-14', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.
+
+Sample from jsonlist.json after right click and format documemt to display in human readable format :)
+[
+    {
+        "resource": "product.screen",
+        "paramaters": {
+            "productId": "FS-SG-G03",
+            "JSESSIONID": "SD0SL6FF7ADFF4953 HTTP "
+        }
+    },
+    {
+        "resource": "cart.do",
+        "paramaters": {
+            "action": "addtocart",
+            "itemId": "EST-21",
+            "productId": "FS-SG-G03",
+            "JSESSIONID": "SD0SL6FF7ADFF4953 HTTP "
+        }
+    },
+    {
+        "resource": "cart.do",
+        "paramaters": {
+            "action": "purchase",
+            "itemId": "EST-21",
+            "JSESSIONID": "SD0SL6FF7ADFF4953 HTTP "
+        }
+    },
+    {
+        "resource": "cart/success.do",
+        "paramaters": {
+            "JSESSIONID": "SD0SL6FF7ADFF4953 HTTP "
+        }
+    },
+    {
+        "resource": "cart.do",
+        "paramaters": {
+            "action": "remove",
+            "itemId": "EST-11",
+            "productId": "WC-SH-A01",
+            "JSESSIONID": "SD0SL6FF7ADFF4953 HTTP "
+        }
+    }
+]
+
+```
+
+
