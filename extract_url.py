@@ -68,11 +68,12 @@ with open(my_file, encoding="utf-8") as f:
         pars = extract_parameters(my_url)
         # iterate over parameter list excluding the first
         # example [' /cart.do', 'action=changequantity', 'itemId=EST-15', 'productId=SC-MG-G10', 'JSESSIONID=SD0SL9FF8ADFF6607 HTTP']
+        # logs have different paramaters, split out and store in a dict
         for parameter in pars[1:]:
             # split on the =
             k, v = re.split("=", parameter)
             # create a dict object with the k,v
-            par_dict = dict({k: v})
+            par_dict = dict({k:v})
             # update paramaters dict
             parameters.update(par_dict)
 
