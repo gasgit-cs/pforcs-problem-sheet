@@ -1,5 +1,5 @@
 
-# program  to graph,  plot and visualise
+# program  to graph, plot and visualise
 # author glen gardiner
 
 import matplotlib.pyplot as plt
@@ -16,11 +16,11 @@ hx = x**3
 # print arrays to console 
 title = print("fx = {} gx = {} hx = {}".format(fx,gx,hx))
 
-# plot fx, linewidth 1, dash-dot, red, points marked with *
+# plot fx, line width 1, dash-dot, red, points marked with *
 plt.plot(x , fx, linewidth='1', ls='-.', color='r',  ms='5', marker='*')
-# plot gx, linewidth 2, dotted, green, points marked with 
+# plot gx, line width 2, dotted, green, points marked with +
 plt.plot(x , gx, linewidth='2', ls=':', color='g', ms='10', marker = '+')
-# plot hx, line width 3, solid, yellow, points marked with circle, markeredgecolor cyan
+# plot hx, line width 3, solid, yellow, points marked with circle, mark eredge color cyan
 plt.plot(x , hx, linewidth='3', color='y', marker='o', ms='15',mec='c')
 
 # labels

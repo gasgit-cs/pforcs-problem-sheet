@@ -273,3 +273,15 @@ Sample from jsonlist.json after right click and format documemt to display in hu
 ```
 
 
+## W08
+
+### ***Program to Plot with NumPy and Matplotlib***
+Program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes
+
+Program Output
+
+```
+
+![Image](/pforcs2021\pforcs-problem-sheet\plot_task.png)
+
+```
