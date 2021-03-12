@@ -37,7 +37,7 @@ plt.title('f(x)=x, g(x)=x2 and h(x)=x3 Range[0,4]')
 plt.legend(['fx', 'gx', 'hx'], loc ='upper left')
 
 # save figure to png 
-plt.savefig('plot_task.png')
+plt.savefig('plot_task.jpg')
 
 # render the figure in gui loop
 plt.show()

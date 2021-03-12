@@ -280,8 +280,4 @@ Program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the
 
 Program Output
 
-```
-
-![Image](/pforcs2021\pforcs-problem-sheet\plot_task.png)
-
-```
+View here: (https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/plot_task.png)
