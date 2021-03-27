@@ -8,10 +8,6 @@ import logging
 import sys
 
 
-#fn = sys.argv[1]
-
-
-
 def get_input_index():
     try:
         my_input = int(input("Enter Int index: "))
@@ -41,11 +37,8 @@ def average_to(aList, toIndex):
     print(new_list)
     try:
         x = int(sum(new_list))
-        print(type(x), x)
-        print(type(toIndex),toIndex)
         avg = x//toIndex
-        print(type(avg), avg)
-        print("average: ", avg)
+   
     except ZeroDivisionError as e:
         logging.warning("/0 :()")
         logging.error(e)
