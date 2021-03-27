@@ -93,11 +93,11 @@ EUR current rate of bitcoin is 31,417.7906
 
 Take an int from the user and calculate steps
 
-*Steps*\
-        take an integer from user\
-        determine parity\
-        if it is even divide it by 2 and return as current value, add to list\
-        if it is odd, multiply it by 3 and add 1 and return as current value add to list\
+*Steps*  
+        take an integer from user  
+        determine parity  
+        if it is even divide it by 2 and return as current value, add to list  
+        if it is odd, multiply it by 3 and add 1 and return as current value add to list  
         conditional checking until current value is 1, exit
 
         
@@ -123,12 +123,12 @@ Collatz Result
 
 Program to estimate the square root of a positive float using newtons equation N = .5(N / G + G)
 N - positive number to find square root of
-G - educated guess\
+G - educated guess  
 
-*Steps*\
-        pass number and initial  guess to the equation\
-        check initial estimate return if close\
-        otherwise, loop using the estimate as G\
+*Steps*  
+        pass number and initial  guess to the equation  
+        check initial estimate return if close  
+        otherwise, loop using the estimate as G  
         n times until estimate is < or equal to N
 
 ### Requirements
@@ -164,21 +164,21 @@ SQRT is 11.0
 Program to take a file name as an argument from console, ask user to enter a letter as input, open and count occurences of the letter
 
 
-*Steps*\
-        pass file to program through console\
+*Steps*  
+        pass file to program through console  
         ask user which letter to count
         convert to upper and lower and store in vars lc uc
-        open the file with file reader\
-        initialise count variables lower, upper\
-        iterate over f to extract each line\
-        iterate over each line to extract each char\
-        check the char is lowercase or uppercase of user input\
+        open the file with file reader  
+        initialise count variables lower, upper  
+        iterate over f to extract each line  
+        iterate over each line to extract each char  
+        check the char is lowercase or uppercase of user input  
         increment counts, add total and print results
 
 
 
 ### Requirements
-I extracted the text from https://www.gutenberg.org/files/2701/old/moby10b.txt\
+I extracted the text from https://www.gutenberg.org/files/2701/old/moby10b.txt  
 Created a file called md.txt
 
 
@@ -198,13 +198,13 @@ Total Chars count: 1009467       Total Lower input: 116960       Total Upper inp
 Program will parse the log file, store urls and paramater dictobjects in lists
 Extract paramaters from urls and create a list of json objects
 
-*Steps*\
-read in file\
-extract url, append to list\
-extract paramaters from url\
-split out, convert to json objects and store in a dict\ 
-extract resource\
-build a new nested dict object and append to my list of dict objects\
+*Steps*  
+read in file  
+extract url, append to list  
+extract paramaters from url  
+split out, convert to json objects and store in a dict   
+extract resource  
+build a new nested dict object and append to my list of dict objects  
 write results out to files
 
 
@@ -223,7 +223,7 @@ Sample from urllist.txt
 Sample from jsonlist.json
 
 
-<pre>[{'resource': 'product.screen', 'paramaters': {'productId': 'WC-SH-A02', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': \'oldlink', 'paramaters': {'itemId': 'EST-6', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.screen', 'paramaters': {'productId': 'BS-AG-G09', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'category.screen', 'paramaters': {'categoryId': 'STRATEGY', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.screen', 'paramaters': {'productId': 'FS-SG-G03', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'addtocart', 'itemId': 'EST-21', 'productId': 'FS-SG-G03', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'purchase', 'itemId': 'EST-21', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart/success.do', 'paramaters': {'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'remove', 'itemId': 'EST-11', 'productId': 'WC-SH-A01', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'oldlink', 'paramaters': {'itemId': 'EST-14', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.</pre>
+<pre>[{'resource': 'product.screen', 'paramaters': {'productId': 'WC-SH-A02', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource':   'oldlink', 'paramaters': {'itemId': 'EST-6', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.screen', 'paramaters': {'productId': 'BS-AG-G09', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'category.screen', 'paramaters': {'categoryId': 'STRATEGY', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.screen', 'paramaters': {'productId': 'FS-SG-G03', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'addtocart', 'itemId': 'EST-21', 'productId': 'FS-SG-G03', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'purchase', 'itemId': 'EST-21', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart/success.do', 'paramaters': {'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'cart.do', 'paramaters': {'action': 'remove', 'itemId': 'EST-11', 'productId': 'WC-SH-A01', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'oldlink', 'paramaters': {'itemId': 'EST-14', 'JSESSIONID': 'SD0SL6FF7ADFF4953 HTTP '}}, {'resource': 'product.</pre>
 
 Sample from jsonlist.json after right click and format documemt to display in human readable format :)
 
@@ -288,36 +288,53 @@ View here: (https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/plot_tas
 
 ### ***Program to read in log file, use pandas and regex to work with data***
 
-Read the access.log into a dataframe\
-Set the date time to be the index\ 
-Use regular expressions to extract the session id from the URLs and store them in a different column\
-Use groupBy to get the sum of all the data downloaded by each sessionId\
-Create a plot of this\
+Read the access.log into a dataframe  
+Set the date time to be the index  
+Use regular expressions to extract the session id from the URLs and store them in a different column  
+Use groupBy and sum of all the data downloaded by each sessionId  
+Create a plot of this
 
 Program Output
 
-'''
+```
 
-SID: SD0SL10FF6ADFF5239  Downloads [3986, 432, 3642, 1185, 880, 214, 470, 3818, 3451] Total Downloaded 18078\
-SID: SD0SL3FF2ADFF5170  Downloads [769, 306, 2602, 3446] Total Downloaded 7123\
-SID: SD0SL5FF6ADFF5249  Downloads [3598, 2154, 2942, 1304, 532, 1702, 1661, 1180] Total Downloaded 15073\
-SID: SD0SL6FF7ADFF4953  Downloads [3878, 1748, 2550, 407, 2047, 1201, 486, 3280, 3619, 1352] Total Downloaded 20568\
-SID: SD10SL10FF5ADFF5106  Downloads [1711, 2133, 3821, 899] Total Downloaded 8564\
-SID: SD10SL7FF8ADFF5413  Downloads [222, 2538, 521, 2919, 3265, 2058, 266, 986, 3531, 1317] Total Downloaded 17623\
-SID: SD1SL8FF3ADFF5403  Downloads [3713, 2188] Total Downloaded 5901\ 
+Sample of groups and total by id  
+JSESSIONID: SD0SL10FF10ADFF11692  Downloads: [1535, 433, 3502, 1741, 1043, 3579, 2640, 652, 2880] Total Downloaded: 18005  
+JSESSIONID: SD0SL10FF10ADFF37428  Downloads: [1764, 803, 3775, 2078, 1951] Total Downloaded: 10371  
+JSESSIONID: SD0SL10FF2ADFF10232  Downloads: [3498, 1062, 1924, 2766, 201, 418, 874, 3908, 2755, 1282, 525, 2154] Total Downloaded: 21367  
+JSESSIONID: SD0SL10FF3ADFF32793  Downloads: [2596, 3623, 3135, 3931, 1442] Total Downloaded: 14727  
+JSESSIONID: SD0SL10FF5ADFF19771  Downloads: [893, 3280, 1151, 2459, 927, 1997, 1482, 720, 2998, 2175, 851] Total Downloaded: 18933   
+JSESSIONID: SD0SL10FF5ADFF23882  Downloads: [2242, 2114, 3731, 3351, 2898, 2632, 889, 2591, 3294, 793] Total Downloaded: 24535  
+JSESSIONID: SD0SL10FF5ADFF37437  Downloads: [695, 900, 416, 577, 2158, 1348, 2373] Total Downloaded: 8467  
+JSESSIONID: SD0SL10FF6ADFF34033  Downloads: [1222, 1088, 2016, 2818, 2204, 2435, 3075] Total Downloaded: 14858  
+JSESSIONID: SD0SL10FF6ADFF36839  Downloads: [724, 617, 824, 714, 2423, 3376, 1506, 2671, 478, 649, 2286, 1877, 2880, 626, 3898, 667, 581, 2057, 3989] Total Downloaded: 32843  
+JSESSIONID: SD0SL10FF6ADFF5239  Downloads: [3986, 432, 3642, 1185, 880, 214, 470, 3818, 3451] Total Downloaded: 1807
 
-or 
+Sample sum of group downloads by jsessionid  
+jsessionid  
+SD0SL10FF10ADFF11692    18005  
+SD0SL10FF10ADFF37428    10371  
+SD0SL10FF2ADFF10232     21367  
+SD0SL10FF3ADFF32793     14727  
+SD0SL10FF5ADFF19771     18933  
+SD0SL10FF5ADFF23882     24535  
+SD0SL10FF5ADFF37437      8467  
+SD0SL10FF6ADFF34033     14858  
+SD0SL10FF6ADFF36839     32843  
+SD0SL10FF6ADFF5239      18078  
+Name: sizeofresponse, dtype: int64  
 
-my_extract_sid\
-SD0SL10FF6ADFF5239     18078\
-SD0SL3FF2ADFF5170       7123\
-SD0SL5FF6ADFF5249      15073\
-SD0SL6FF7ADFF4953      20568\
-SD10SL10FF5ADFF5106     8564\
-SD10SL7FF8ADFF5413     17623\
-SD1SL8FF3ADFF5403       5901
+Sample sorted sum of top download values  
+                     sizeofresponse  
+jsessionid  
+SD0SL1FF8ADFF11838            54259  
+SD3SL6FF4ADFF9607             51410  
+SD5SL3FF1ADFF16584            49410  
+SD3SL3FF2ADFF16050            49333  
+SD10SL8FF5ADFF31078           48881
 
-'''
+
+```
 
 
 ##Steps
