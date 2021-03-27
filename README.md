@@ -281,3 +281,43 @@ Program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the
 Program Output
 
 View here: (https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/plot_task.png)
+
+
+
+## W09
+
+### ***Program to read in log file, use pandas and regex to work with data***
+
+Read the access.log into a dataframe\
+Set the date time to be the index\ 
+Use regular expressions to extract the session id from the URLs and store them in a different column\
+Use groupBy to get the sum of all the data downloaded by each sessionId\
+Create a plot of this\
+
+Program Output
+
+'''
+
+SID: SD0SL10FF6ADFF5239  Downloads [3986, 432, 3642, 1185, 880, 214, 470, 3818, 3451] Total Downloaded 18078\
+SID: SD0SL3FF2ADFF5170  Downloads [769, 306, 2602, 3446] Total Downloaded 7123\
+SID: SD0SL5FF6ADFF5249  Downloads [3598, 2154, 2942, 1304, 532, 1702, 1661, 1180] Total Downloaded 15073\
+SID: SD0SL6FF7ADFF4953  Downloads [3878, 1748, 2550, 407, 2047, 1201, 486, 3280, 3619, 1352] Total Downloaded 20568\
+SID: SD10SL10FF5ADFF5106  Downloads [1711, 2133, 3821, 899] Total Downloaded 8564\
+SID: SD10SL7FF8ADFF5413  Downloads [222, 2538, 521, 2919, 3265, 2058, 266, 986, 3531, 1317] Total Downloaded 17623\
+SID: SD1SL8FF3ADFF5403  Downloads [3713, 2188] Total Downloaded 5901\ 
+
+or 
+
+my_extract_sid\
+SD0SL10FF6ADFF5239     18078\
+SD0SL3FF2ADFF5170       7123\
+SD0SL5FF6ADFF5249      15073\
+SD0SL6FF7ADFF4953      20568\
+SD10SL10FF5ADFF5106     8564\
+SD10SL7FF8ADFF5413     17623\
+SD1SL8FF3ADFF5403       5901
+
+'''
+
+
+##Steps
