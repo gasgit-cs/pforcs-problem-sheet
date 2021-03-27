@@ -1,7 +1,10 @@
-# create a function to take a list and index, return the averageof teh numbers
-# up to and including the toindex in the list
+# create a function to take a list and index, return the average of the numbers
+# up to and including the given index
 
 # author glen gardiner
+
+
+# incomplete ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 import random
 import logging
@@ -15,7 +18,7 @@ def get_input_index():
             logging.error("Non positive number entered %d", my_input, exc_info=True)     
             raise ValueError("Non positive number entered")
     except ValueError as e:
-        logging.error(e, '\/()\/',exc_info=True)
+        logging.error(e, '\/()\/', exc_info=True)
         print(e)
     else:
         logging.info('Input OK')
