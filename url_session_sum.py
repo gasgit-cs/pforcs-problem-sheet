@@ -73,8 +73,8 @@ def my_plot():
     pt = pd.Series(total_mbs)
 
     pt.plot(kind="barh", figsize=(12, 8))
-    plt.xlabel("jsessionid")
-    plt.ylabel("Total MBS Downloaded")
+    plt.ylabel("jsessionid")
+    plt.xlabel("Total MBS Downloaded")
     plt.title('Total Downloaded by SID')
    # plt.show()
     plt.savefig('plot_downloads.png')
