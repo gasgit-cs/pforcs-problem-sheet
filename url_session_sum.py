@@ -65,11 +65,11 @@ def get_highest():
 
 # create plot
 def my_plot():
-    print('\nCreating plot now, check file ./plot_downloads.png')
+    print('\nCreating plot now, check file ./plot_downloads.png or ./plot_downloads_all.py')
     # limit with head 30 to create readable plot
-    total_mbs = df.groupby(['jsessionid'])['sizeofresponse'].sum().head(30)
+    #total_mbs = df.groupby(['jsessionid'])['sizeofresponse'].sum().head(30)
     # all
-    #total_mbs = df.groupby(['jsessionid'])['sizeofresponse'].sum()
+    total_mbs = df.groupby(['jsessionid'])['sizeofresponse'].sum()
     pt = pd.Series(total_mbs)
 
     pt.plot(kind="barh", figsize=(12, 8))
@@ -77,8 +77,8 @@ def my_plot():
     plt.xlabel("Total MBS Downloaded")
     plt.title('Total Downloaded by SID')
    # plt.show()
-    plt.savefig('plot_downloads.png')
-    # plt.savefig('plot_downloads_all.png')
+    # plt.savefig('plot_downloads.png')
+    plt.savefig('plot_downloads_all.png')
 
 
 # to do
