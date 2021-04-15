@@ -1,12 +1,6 @@
-2021-03-27 18:06:07,952 - INFO - Input OK -root -Line: 21
-2021-03-27 18:06:07,954 - INFO - Division OK -root -Line: 49
-2021-03-27 18:06:32,000 - INFO - Input OK -root -Line: 21
-2021-03-27 18:06:32,001 - INFO - Division OK -root -Line: 48
-2021-03-27 18:07:15,961 - ERROR - Non positive number entered -2 -root -Line: 15
-NoneType: None
-2021-03-27 18:07:28,610 - INFO - Input OK -root -Line: 21
-2021-03-27 18:07:28,611 - INFO - Division OK -root -Line: 46
-2021-03-27 19:53:39,414 - INFO - Input OK -root -Line: 21
-2021-03-27 19:53:39,416 - INFO - Division OK -root -Line: 46
-2021-03-27 20:25:44,519 - ERROR - Non positive number entered -4 -root -Line: 15
-NoneType: None
+2021-04-15 23:24:41,851 - INFO - Input OK -root -Line: 26
+2021-04-15 23:24:41,852 - ERROR - List is empty:( -root -Line: 37
+2021-04-15 23:26:19,130 - INFO - Input OK -root -Line: 26
+2021-04-15 23:26:19,131 - INFO - Division OK -root -Line: 54
+2021-04-15 23:30:00,798 - INFO - Input OK -root -Line: 26
+2021-04-15 23:30:00,799 - INFO - Division OK -root -Line: 54

@@ -29,26 +29,31 @@ def get_input_index():
         
 def create_random_list():
     rdm_list = [random.randrange(1, 50, 1) for i in range(12)]
-    # print(str(rdm_list))
+    print(str(rdm_list))
     try:
         assert len(rdm_list) != 0, "List is empty." 
+
         return rdm_list
     except AssertionError as err:
         logging.error('List is empty:(')
         raise err
 
 def average_to(aList, toIndex):
-    new_list = [x for x in aList[0:toIndex]]
+    new_list = [x for x in aList[0:(toIndex + 1)]]
     print(new_list)
     try:
         x = int(sum(new_list))
+        print("Summ of new list: ", x)
         avg = x//toIndex
-   
+
     except ZeroDivisionError as e:
         logging.warning("/0 :()")
         logging.error(e)
+        #raise Exception("Division by zero error")
+        raise Exception(e)
     else:
         logging.info('Division OK')
+        print("Avg of new list:" ,avg)
         return avg
 
 def main():
