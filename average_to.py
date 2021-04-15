@@ -4,15 +4,11 @@
 # author glen gardiner
 
 
-# incomplete ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# V1
-
-
 import random
 import logging
 import sys
 
-
+# function to take user input, test input is not a negative number, raise exception and log
 def get_input_index():
     try:
         my_input = int(input("Enter Int index: "))
@@ -32,7 +28,6 @@ def create_random_list():
     print(str(rdm_list))
     try:
         assert len(rdm_list) != 0, "List is empty." 
-
         return rdm_list
     except AssertionError as err:
         logging.error('List is empty:(')
@@ -41,20 +36,24 @@ def create_random_list():
 def average_to(aList, toIndex):
     new_list = [x for x in aList[0:(toIndex + 1)]]
     print(new_list)
-    try:
-        x = int(sum(new_list))
-        print("Summ of new list: ", x)
-        avg = x//toIndex
-
-    except ZeroDivisionError as e:
-        logging.warning("/0 :()")
-        logging.error(e)
-        #raise Exception("Division by zero error")
-        raise Exception(e)
+    if new_list == []:
+        raise Exception("New list is empty")
     else:
-        logging.info('Division OK')
-        print("Avg of new list:" ,avg)
-        return avg
+
+        try:
+            x = int(sum(new_list))
+            print("Summ of new list: ", x)
+            avg = x//toIndex
+
+        except ZeroDivisionError as e:
+            logging.warning("/0 :()")
+            logging.error(e)
+            #raise Exception("Division by zero error")
+            raise Exception(e)
+        else:
+            logging.info('Division OK')
+            print("Avg of new list:" ,avg)
+            return avg
 
 def main():
     logging.basicConfig(filename='./debug_average.log', filemode='a',level=logging.DEBUG,

@@ -338,3 +338,11 @@ SD10SL8FF5ADFF31078           48881
 
 
 ##Steps
+
+
+## 10
+
+### ***create a function to take a list and index, return the average of the numbers up to and including the given index***
+
+Write some tests for the program, display results and write helpful logs out to a log file
+
