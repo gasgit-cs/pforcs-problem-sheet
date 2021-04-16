@@ -6,3 +6,8 @@
 2021-04-15 23:30:00,799 - INFO - Division OK -root -Line: 54
 2021-04-15 23:50:42,262 - ERROR - Non positive number entered -1 -root -Line: 20
 NoneType: None
+2021-04-16 00:48:37,096 - INFO - Input OK -root -Line: 22
+2021-04-16 00:48:37,096 - INFO - Division OK -root -Line: 54
+2021-04-16 00:48:45,805 - INFO - Input OK -root -Line: 22
+2021-04-16 00:48:45,822 - WARNING - /0 :() -root -Line: 49
+2021-04-16 00:48:45,824 - ERROR - integer division or modulo by zero -root -Line: 50

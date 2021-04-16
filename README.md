@@ -17,7 +17,7 @@ Get user input for height(cms) and weight(kg), calculate bmi.
 
 BMI = kg/m2
 
-[HSE BMI Chart] (https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf)
+[HSE BMI Chart](https://www.hse.ie/eng/services/list/2/primarycare/east-coast-diabetes-service/management-of-type-2-diabetes/lifestyle-management/healthy-eating-advice/bmi-chart.pdf)
 
 Program output
 
@@ -33,6 +33,8 @@ Weight: 60.0
 
 Your BMI is : 18.51851851851852
 ```
+
+[Code: bmi.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/bmi.py)
 
 #
 
@@ -84,6 +86,7 @@ USD current rate of bitcoin is 37,849.0204
 GBP current rate of bitcoin is 27,563.6627
 EUR current rate of bitcoin is 31,417.7906
 ```
+[Code: bitcoin.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/bitcoin.py)
 
 #
 
@@ -114,6 +117,8 @@ Enter int: 10
 Collatz Result
 5 16 8 4 2 1
 ```
+
+[Code: collatz_c.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/collatz_c.py)
 
 #
 
@@ -155,6 +160,8 @@ Subsequent Estimate: 11.0
 SQRT is 11.0
 ```
 
+[Code: sqrt.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/sqrt.py)
+
 #
 
 ## W06
@@ -188,6 +195,7 @@ Program output
 Enter the letter you require counted: e
 Total Chars count: 1009467       Total Lower input: 116960       Total Upper input: 1363         Total input: 118323
 ```
+[Code: es.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/es.py)
 
 #
 
@@ -272,6 +280,8 @@ Sample from jsonlist.json after right click and format documemt to display in hu
 
 ```
 
+[Code: extract_url.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/extract_url.py)
+
 
 ## W08
 
@@ -282,7 +292,7 @@ Program Output
 
 View here: (https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/plot_task.png)
 
-
+[Code plot_task.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/plot_task.py)
 
 ## W09
 
@@ -336,6 +346,8 @@ SD10SL8FF5ADFF31078           48881
 
 ```
 
+[Code url_session_sum.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/url_session_sum.py)
+
 
 ##Steps
 
@@ -345,4 +357,8 @@ SD10SL8FF5ADFF31078           48881
 ### ***create a function to take a list and index, return the average of the numbers up to and including the given index***
 
 Write some tests for the program, display results and write helpful logs out to a log file
+
+[Code: average_to.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/average_to.py)
+[Code: average_to_test.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/average_to_test.py)
+[File: debug_average.log](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/debug_average.log)
 
