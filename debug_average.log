@@ -1,27 +1,22 @@
-2021-04-15 23:24:41,851 - INFO - Input OK -root -Line: 26
-2021-04-15 23:24:41,852 - ERROR - List is empty:( -root -Line: 37
-2021-04-15 23:26:19,130 - INFO - Input OK -root -Line: 26
-2021-04-15 23:26:19,131 - INFO - Division OK -root -Line: 54
-2021-04-15 23:30:00,798 - INFO - Input OK -root -Line: 26
-2021-04-15 23:30:00,799 - INFO - Division OK -root -Line: 54
-2021-04-15 23:50:42,262 - ERROR - Non positive number entered -1 -root -Line: 20
+
+2021-04-30 20:41:37,714 - INFO - Input OK -root -Line: 25
+2021-04-30 20:41:37,726 - INFO - Division OK -root -Line: 71
+2021-04-30 20:48:51,039 - INFO - Input OK -root -Line: 25
+2021-04-30 20:52:54,529 - INFO - Input OK -root -Line: 25
+2021-04-30 20:58:50,779 - INFO - Input OK -root -Line: 25
+2021-04-30 20:58:50,781 - INFO - Division OK -root -Line: 58
+2021-04-30 20:58:58,691 - INFO - Input OK -root -Line: 25
+2021-04-30 20:58:58,693 - WARNING - /0 :() -root -Line: 53
+2021-04-30 20:58:58,693 - ERROR - integer division or modulo by zero -root -Line: 54
+2021-04-30 20:59:37,459 - INFO - Input OK -root -Line: 25
+2021-04-30 20:59:37,461 - WARNING - /0 :() -root -Line: 53
+2021-04-30 20:59:37,461 - ERROR - integer division or modulo by zero -root -Line: 54
+2021-04-30 21:09:37,141 - INFO - Input OK -root -Line: 25
+2021-04-30 21:09:37,144 - INFO - Division OK -root -Line: 66
+2021-04-30 21:10:24,689 - INFO - Input OK -root -Line: 25
+2021-04-30 21:10:24,704 - WARNING - /0 :() -root -Line: 61
+2021-04-30 21:10:24,704 - ERROR - integer division or modulo by zero -root -Line: 62
+2021-04-30 21:10:49,392 - ERROR - Non positive number entered -1 -root -Line: 18
 NoneType: None
-2021-04-16 00:48:37,096 - INFO - Input OK -root -Line: 22
-2021-04-16 00:48:37,096 - INFO - Division OK -root -Line: 54
-2021-04-16 00:48:45,805 - INFO - Input OK -root -Line: 22
-2021-04-16 00:48:45,822 - WARNING - /0 :() -root -Line: 49
-2021-04-16 00:48:45,824 - ERROR - integer division or modulo by zero -root -Line: 50
-2021-04-30 11:24:58,532 - INFO - Input OK -root -Line: 22
-2021-04-30 11:24:58,545 - INFO - Division OK -root -Line: 54
-2021-04-30 11:27:01,837 - INFO - Input OK -root -Line: 22
-2021-04-30 11:27:35,628 - INFO - Input OK -root -Line: 22
-2021-04-30 11:27:35,643 - INFO - Division OK -root -Line: 54
-2021-04-30 11:27:52,769 - INFO - Input OK -root -Line: 22
-2021-04-30 11:27:52,769 - INFO - Division OK -root -Line: 54
-2021-04-30 11:28:10,745 - INFO - Input OK -root -Line: 22
-2021-04-30 11:28:10,753 - INFO - Division OK -root -Line: 54
-2021-04-30 11:28:26,137 - INFO - Input OK -root -Line: 22
-2021-04-30 11:28:26,153 - INFO - Division OK -root -Line: 54
-2021-04-30 11:47:52,872 - INFO - Input OK -root -Line: 22
-2021-04-30 11:49:07,406 - INFO - Input OK -root -Line: 22
-2021-04-30 11:49:07,412 - INFO - Division OK -root -Line: 71
+2021-04-30 21:12:38,873 - INFO - Input OK -root -Line: 25
+2021-04-30 21:12:38,875 - INFO - Division OK -root -Line: 66

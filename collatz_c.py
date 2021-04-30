@@ -8,6 +8,7 @@
 # author glen gardiner
 
 # list data structure to store values
+
 # cl - colatz list to store data
 cl = []
 

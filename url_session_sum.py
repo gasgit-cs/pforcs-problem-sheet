@@ -88,8 +88,8 @@ def my_plot():
     plt.xlabel("Total MBS Downloaded")
     plt.title('Total Downloaded by SID')
     # plt.show()
-    # plt.savefig('plot_downloads.png')
-    plt.savefig('plot_downloads_all.png')
+    plt.savefig('plot_downloads.png')
+    # plt.savefig('plot_downloads_all.png')
 
 
 # to do
