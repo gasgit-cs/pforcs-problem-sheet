@@ -1,11 +1,11 @@
 # terminal program to take user input, calculate and display BMI
 # inputs user height in cms, user weight in kg
-# outputs height in metres, weight in kgs, bmi 
+# outputs height in metres, weight in kgs, bmi
 # author glen gardiner
 
-# function to 
+# function to
 def get_height():
-    
+
     # print new blank line
     print("\n")
 
@@ -38,28 +38,34 @@ def get_weight():
     return user_weight
 
 # function to calculate the bmi, take 2 args user weight & user height in metres
+
+
 def calculate(user_weight, user_height_metres):
 
     # calculate bmi - user weight kg divided by height m2
-    bmi = (user_weight / (user_height_metres ** 2))
+    bmi = round((user_weight / (user_height_metres ** 2)),2)
     # return bm1
     return bmi
 
 # function to display bmi, accepts 1 args bmi
+
+
 def display(bmi):
 
     # print message and bmi
     print("Your BMI is : " + str(bmi))
 
 # main method for program, call other functions as required
+
+
 def main():
-    
+
     x = get_height()
     y = get_weight()
     b = calculate(y, x)
     display(b)
 
+
 # conditional block to check if the script contains a main function, running while True
 if __name__ == "__main__":
     main()
-

@@ -23,15 +23,32 @@ def get_input_index():
         return my_input
 
         
-def create_random_list():
-    rdm_list = [random.randrange(1, 50, 1) for i in range(12)]
-    print(str(rdm_list))
-    try:
-        assert len(rdm_list) != 0, "List is empty." 
-        return rdm_list
-    except AssertionError as err:
-        logging.error('List is empty:(')
-        raise err
+def create_random_list(max=50):
+
+    if max <= 0:
+        print("Range cannot be 0")
+    else: 
+
+    
+        rdm_list = [random.randrange(1, max , 1) for i in range(12)]
+        print(str(rdm_list))
+        
+        
+        # try:
+        #     assert max > 0, "Range cannot be 0"
+        
+        
+        
+        # except AssertionError as e:
+        #     print(e)
+
+        try:
+            assert len(rdm_list) != 0, "List is empty." 
+            
+            return rdm_list
+        except AssertionError as err:
+            logging.error('List is empty:(')
+            raise err
 
 def average_to(aList, toIndex):
     new_list = [x for x in aList[0:(toIndex + 1)]]

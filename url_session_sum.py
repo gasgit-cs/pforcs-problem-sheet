@@ -18,7 +18,7 @@ df['time'] = df['time'].str.strip('[]')
 df['time'] = pd.to_datetime(df['time'], format="%d/%b/%Y:%H:%M:%S")
 
 # prin first 4 to test df
-#print(df.head(4))
+# print(df.head(4))
 
 # drop unwanted columns
 df.drop(columns=['ip', 'dash1', 'dash2', 'dunno',
@@ -27,9 +27,11 @@ df.drop(columns=['ip', 'dash1', 'dash2', 'dunno',
 df.set_index('time')
 
 # print first 10 rows to test df
-#print(df.head(10))
+# print(df.head(10))
 
 # regex function to extract the session id
+
+
 def extract_sessionid(x):
     x = re.search(r'((?<=JSESSIONID=).*?(?=\sHTTP\s))', x).group()
     return x
@@ -39,23 +41,30 @@ def extract_sessionid(x):
 df['jsessionid'] = df['url'].apply(extract_sessionid)
 
 # function to group (jsessionid) and (sizeofresponse), itreate and unpack k,v , print k, values in v and sum values in v
+
+
 def unpack_print_group_by():
     print('Sample of groups and total by id')
     total_mbs_unpack = df.groupby(['jsessionid'])['sizeofresponse']
     break_point = 0
     for k, v in total_mbs_unpack:
-        break_point+=1
-        print("JSESSIONID: {}  Downloads: {} Total Downloaded: {} ".format(k, [x for x in v], v.sum()))
-        if break_point ==10:
+        break_point += 1
+        print("JSESSIONID: {}  Downloads: {} Total Downloaded: {} ".format(
+            k, [x for x in v], v.sum()))
+        if break_point == 10:
             break
 
 # function to group (jsessionid) and (sizeofresponse), summing (sizeofresponse)
+
+
 def sum_downloads():
     print('\nSum of group downloads by jsessionid')
     total_mbs = df.groupby(['jsessionid'])['sizeofresponse'].sum().head(10)
     print(total_mbs)
 
 # function to group, sum and sort highest values
+
+
 def get_highest():
 
     print("\nSorted sum of top download values")
@@ -64,6 +73,8 @@ def get_highest():
     print(x.head(5))
 
 # create plot
+
+
 def my_plot():
     print('\nCreating plot now, check file ./plot_downloads.png or ./plot_downloads_all.py')
     # limit with head 30 to create readable plot
@@ -76,7 +87,7 @@ def my_plot():
     plt.ylabel("jsessionid")
     plt.xlabel("Total MBS Downloaded")
     plt.title('Total Downloaded by SID')
-   # plt.show()
+    # plt.show()
     # plt.savefig('plot_downloads.png')
     plt.savefig('plot_downloads_all.png')
 
@@ -92,13 +103,11 @@ def main():
     unpack_print_group_by()
     # sum download by group
     sum_downloads()
-    # sum and sort 
+    # sum and sort
     get_highest()
     # create plot
     my_plot()
 
-    
 
- 
 if __name__ == "__main__":
     main()

@@ -12,6 +12,8 @@
 cl = []
 
 # get and return int fron user
+
+
 def get_input():
     # i - input value
     i = int(input("Enter int: "))
@@ -19,6 +21,8 @@ def get_input():
 
 # check sign, if not greater than 0, get input and check sign again
 # s - passed value to check sign
+
+
 def check_sign(s):
     if s > 0:
         return s
@@ -32,6 +36,8 @@ def check_sign(s):
 # p - passed value to check parity
 # cv - current value
 # cl - list to store data
+
+
 def check_par(p):
     if (p % 2) == 0:
         cv = p // 2
@@ -45,6 +51,8 @@ def check_par(p):
 # while loop to check condition( c is not equal to 1 ) is true proceed
 # until false break
 # c -  passed value to check condition
+
+
 def meet_condition(c):
     while True:
         if c != 1:
@@ -52,18 +60,23 @@ def meet_condition(c):
         else:
             print("{} Exit!".format(c))
             break
- # iiterate list and display in sequence   
+ # iiterate list and display in sequence
+
+
 def display_col_list():
     print("Collatz Result")
     for x in cl:
         print(x, end=" ")
 
 # main function to organise/control program flow
+
+
 def main():
     x = get_input()
     y = check_sign(x)
     meet_condition(y)
     display_col_list()
+
 
 if __name__ == "__main__":
     main()

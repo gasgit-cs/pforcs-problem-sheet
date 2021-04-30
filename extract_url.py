@@ -7,15 +7,18 @@ import json
 import pprint
 import os
 
-# file 
+# file
 my_file = './mydir/access.log'
 
 # function to check file exists
+
+
 def check_file_path(file_to_check):
     try:
         os.path.exists(file_to_check)
     except FileNotFoundError as e:
         print(e)
+
 
 # function to check file exists
 check_file_path(my_file)
@@ -26,6 +29,8 @@ url_list = []
 json_list = []
 
 # function to extract the url from the point (space forward slash) ending with (space  HTTP  space)
+
+
 def extract_url(log):
     url_pattern = re.compile(r'\s\/.*\sHTTP\s')
     url_match = re.search(url_pattern, log)
@@ -54,11 +59,11 @@ def extract_parameters(url):
 with open(my_file, encoding="utf-8") as f:
     logfiles = f.readlines()
     # iterate each line
-    for log in logfiles: 
+    for log in logfiles:
 
         # store paramater dict objects
         parameters = {}
-       
+
         # extarct urls
         my_url = extract_url(log)
         # append to url list
@@ -73,7 +78,7 @@ with open(my_file, encoding="utf-8") as f:
             # split on the =
             k, v = re.split("=", parameter)
             # create a dict object with the k,v
-            par_dict = dict({k:v})
+            par_dict = dict({k: v})
             # update paramaters dict
             parameters.update(par_dict)
 
@@ -81,7 +86,7 @@ with open(my_file, encoding="utf-8") as f:
         res = extract_resource(log)
         # create new dict using resource and paramaters dicts
         res_and_pars = dict({'resource': res, 'paramaters': parameters})
-        
+
         # append to json list
         json_list.append(res_and_pars)
 
@@ -95,6 +100,7 @@ with open('./mydir/urllist', 'w', encoding='utf-8') as f:
 
 with open('./mydir/jsonlist.txt', 'w', encoding='utf-8') as f:
     f.write(str(json_list))
+
 
 def message():
     print("Sorted, check mydir for results to file!")

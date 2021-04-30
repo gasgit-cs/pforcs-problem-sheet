@@ -1,5 +1,5 @@
 
-# pforcs-problem-sheet G00305555 
+# pforcs-problem-sheet G00305555
 
 ## W01
 
@@ -23,7 +23,6 @@ Program output
 
 ```bash
 We need some details to calculate:)
-
 
 Enter your height cms: 180
 Height: 1.8
@@ -86,6 +85,7 @@ USD current rate of bitcoin is 37,849.0204
 GBP current rate of bitcoin is 27,563.6627
 EUR current rate of bitcoin is 31,417.7906
 ```
+
 [Code: bitcoin.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/bitcoin.py)
 
 #
@@ -103,11 +103,6 @@ Take an int from the user and calculate steps
         if it is odd, multiply it by 3 and add 1 and return as current value add to list  
         conditional checking until current value is 1, exit
 
-        
-
-### Requirements
-
-None
 
 Program output
 
@@ -137,6 +132,7 @@ G - educated guess
         n times until estimate is < or equal to N
 
 ### Requirements
+
 Import module menurq (simple module to display a menu) 
 
 Program output
@@ -170,7 +166,6 @@ SQRT is 11.0
 
 Program to take a file name as an argument from console, ask user to enter a letter as input, open and count occurences of the letter
 
-
 *Steps*  
         pass file to program through console  
         ask user which letter to count
@@ -183,18 +178,19 @@ Program to take a file name as an argument from console, ask user to enter a let
         increment counts, add total and print results
 
 
-
 ### Requirements
+
 I extracted the text from https://www.gutenberg.org/files/2701/old/moby10b.txt  
 Created a file called md.txt
 
 
-
 Program output
+
 ```bash
 Enter the letter you require counted: e
 Total Chars count: 1009467       Total Lower input: 116960       Total Upper input: 1363         Total input: 118323
 ```
+
 [Code: es.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/es.py)
 
 #
@@ -207,13 +203,13 @@ Program will parse the log file, store urls and paramater dictobjects in lists
 Extract paramaters from urls and create a list of json objects
 
 *Steps*  
-read in file  
-extract url, append to list  
-extract paramaters from url  
-split out, convert to json objects and store in a dict   
-extract resource  
-build a new nested dict object and append to my list of dict objects  
-write results out to files
+    read in file  
+    extract url, append to list  
+    extract paramaters from url  
+    split out, convert to json objects and store in a dict   
+    extract resource  
+    build a new nested dict object and append to my list of dict objects  
+    write results out to files
 
 
 ### Requirements
@@ -286,6 +282,7 @@ Sample from jsonlist.json after right click and format documemt to display in hu
 ## W08
 
 ### ***Program to Plot with NumPy and Matplotlib***
+
 Program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes
 
 Program Output
@@ -343,22 +340,25 @@ SD5SL3FF1ADFF16584            49410
 SD3SL3FF2ADFF16050            49333  
 SD10SL8FF5ADFF31078           48881
 
+Creating plot now, check file ./plot_downloads.png or ./plot_downloads_all.py
+
 
 ```
 
 [Code url_session_sum.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/url_session_sum.py)
 
 
-##Steps
+#
 
+## W10
 
-## 10
+### ***Create a function to take a list and index, return the average of the numbers up to and including the given index***
 
-### ***create a function to take a list and index, return the average of the numbers up to and including the given index***
+Not Completed, before EOD
 
 Write some tests for the program, display results and write helpful logs out to a log file
 
-[Code: average_to.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/average_to.py)
-[Code: average_to_test.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/average_to_test.py)
+[Code: average_to.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/average_to.py)\
+[Code: average_to_test.py](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/average_to_test.py)\
 [File: debug_average.log](https://github.com/gasgit-cs/pforcs-problem-sheet/blob/main/debug_average.log)
 

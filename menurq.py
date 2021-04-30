@@ -1,5 +1,5 @@
 # module for simple menu keep program running or quit
-# authoe glen gardiner
+# author glen gardiner
 
 # required 
 import sys

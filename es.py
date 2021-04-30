@@ -3,6 +3,7 @@
 # run program calling es.py and passing the name of a file to read
 
 # example: python es.py Lorem-ipsum.txt
+# for this task its es.py md.txt
 
 import sys
 
@@ -12,6 +13,7 @@ import sys
 # lc - lowercase i
 
 fn = sys.argv[1]
+
 # get letter from user
 i  = input("Enter the letter you require counted: ")
 

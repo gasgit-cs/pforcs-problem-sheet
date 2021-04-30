@@ -11,3 +11,17 @@ NoneType: None
 2021-04-16 00:48:45,805 - INFO - Input OK -root -Line: 22
 2021-04-16 00:48:45,822 - WARNING - /0 :() -root -Line: 49
 2021-04-16 00:48:45,824 - ERROR - integer division or modulo by zero -root -Line: 50
+2021-04-30 11:24:58,532 - INFO - Input OK -root -Line: 22
+2021-04-30 11:24:58,545 - INFO - Division OK -root -Line: 54
+2021-04-30 11:27:01,837 - INFO - Input OK -root -Line: 22
+2021-04-30 11:27:35,628 - INFO - Input OK -root -Line: 22
+2021-04-30 11:27:35,643 - INFO - Division OK -root -Line: 54
+2021-04-30 11:27:52,769 - INFO - Input OK -root -Line: 22
+2021-04-30 11:27:52,769 - INFO - Division OK -root -Line: 54
+2021-04-30 11:28:10,745 - INFO - Input OK -root -Line: 22
+2021-04-30 11:28:10,753 - INFO - Division OK -root -Line: 54
+2021-04-30 11:28:26,137 - INFO - Input OK -root -Line: 22
+2021-04-30 11:28:26,153 - INFO - Division OK -root -Line: 54
+2021-04-30 11:47:52,872 - INFO - Input OK -root -Line: 22
+2021-04-30 11:49:07,406 - INFO - Input OK -root -Line: 22
+2021-04-30 11:49:07,412 - INFO - Division OK -root -Line: 71
